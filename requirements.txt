@@ -1,0 +1,3 @@
+Flask
+py server.py
+./ngrok.exe http 5000

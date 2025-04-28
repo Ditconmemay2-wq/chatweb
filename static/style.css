@@ -1,0 +1,76 @@
+/* Cấu trúc chính của chat container */
+.chat-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Phần tiêu đề chat */
+.chat-header h2 {
+    text-align: center;
+    font-size: 30px;  /* Tăng cỡ chữ tiêu đề */
+    margin-bottom: 20px;
+}
+
+/* Phần hiển thị tin nhắn */
+.chat-messages {
+    height: 400px;  /* Tăng chiều cao phần hiển thị tin nhắn */
+    overflow-y: scroll;  /* Thêm cuộn dọc khi tin nhắn nhiều */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    font-size: 18px;  /* Tăng kích thước chữ cho tin nhắn */
+    line-height: 1.6;  /* Tăng khoảng cách dòng để dễ đọc */
+    margin-bottom: 20px;
+}
+
+/* Phần form nhập tin nhắn */
+.chat-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Phần nhập tên */
+#name-input {
+    font-size: 18px;  /* Tăng kích thước chữ khi nhập tên */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Phần nhập tin nhắn */
+#chat-input {
+    font-size: 18px;  /* Tăng kích thước chữ khi nhập tin nhắn */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Nút gửi tin nhắn */
+button {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Phần thông báo lỗi khi không nhập tên */
+.error-message {
+    color: red;
+    font-size: 16px;
+    display: none;
+    margin-bottom: 10px;
+}
